@@ -1,5 +1,5 @@
-on:
-  workflow_dispatch:    
+name: sqlcheck workflow1
+on: pull_request
 
 jobs:
   sqlcheck:
