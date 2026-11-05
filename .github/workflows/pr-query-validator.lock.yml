@@ -131,7 +131,7 @@ jobs:
         env:
           GH_AW_INFO_ENGINE_ID: "copilot"
           GH_AW_INFO_ENGINE_NAME: "GitHub Copilot CLI"
-          GH_AW_INFO_MODEL: "auto"
+          GH_AW_INFO_MODEL: "gpt-5"
           GH_AW_INFO_VERSION: "1.0.103"
           GH_AW_INFO_AGENT_VERSION: "1.0.103"
           GH_AW_INFO_CLI_VERSION: "v1.0.1"
@@ -420,9 +420,9 @@ jobs:
           if-no-files-found: ignore
           retention-days: ${{ vars.GH_AW_DEFAULT_ARTIFACT_RETENTION_DAYS || '1' }}
 
-      - name: Show model catalogshel
+      - name: Debug model
         run: |
-          cat /tmp/gh-aw/agent/awf-reflect.json 
+          echo "COPILOT_MODEL=$COPILOT_MODEL" 
 
   agent:
     name: agent
