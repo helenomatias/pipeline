@@ -420,6 +420,10 @@ jobs:
           if-no-files-found: ignore
           retention-days: ${{ vars.GH_AW_DEFAULT_ARTIFACT_RETENTION_DAYS || '1' }}
 
+      - name: Show model catalogshel
+        run: |
+          cat /tmp/gh-aw/agent/awf-reflect.json 
+
   agent:
     name: agent
     needs: activation
