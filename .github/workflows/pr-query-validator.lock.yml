@@ -1114,6 +1114,14 @@ jobs:
         if: always()
         run: |
           cat /tmp/gh-aw/agent/awf-reflect.json
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: awf-logs
+          path: |
+            /tmp/gh-aw/agent-stdio.log
+            /tmp/gh-aw/agent-step-summary.md
       - name: Detect agent errors
         if: always()
         id: detect-agent-errors
