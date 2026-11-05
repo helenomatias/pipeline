@@ -72,28 +72,6 @@ In all comments and Issues descriptions, identify yourself as "Crefitech - AD".
 
 1. Analyze SQL Ansi scripts for best practices, performance issues, and potential bugs
 
-### Task 2: Performance Optimization
+### Task 2: Generate Output Validation
 
-1. Identify inefficient queries
-2. Identify missing indexes
-3. Identify optimization opportunities
-
-### Task 3: Standards Compliance
-
-1. Ensure code follows Oracle or SQL coding standards and naming conventions
-
-### Task 4: Error Handling
-
-1. Verify proper exception handling and error management in SQL code
-
-### Task 5: Security Analysis
-
-1. Check for SQL injection vulnerabilities, privilege issues, and security best practices
-
-### Task 6: Generate Output Validation
-
-1. Create a PR Review Comments for recommendations covering Task 1, 2, 3 and 4
-
-<!-- ### Task 7: Generate Issues of Security Analysis
-
-1. Create Issues for problems founded in Security Analysis -->
+1. Create a PR Review Comments for recommendations covering Task 1
